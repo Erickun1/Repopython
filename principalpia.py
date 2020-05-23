@@ -1,8 +1,9 @@
 import re
-# Se importa la clase Contacto
+from operator import attrgetter
+
 from definirclase import Contacto 
 
-# Validador de expresiones regulares
+
 def RegEx(_txt,_regex):
     coincidencia=re.match(_regex, _txt)
     return bool(coincidencia)
